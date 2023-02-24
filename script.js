@@ -67,17 +67,17 @@ function numberToBr(numero) {
 // +++++++++++++++++++++++++++++++++++++++++++++++  
  //============== function numtostr ====================
 
- function numtostr(a, e, r, t) {
+ function numtostr(a, e, r, t) {function numtostr(a, e, r, t) {
 	let n = ""
 	  , h = j = 0
 	  , u = tamanho2 = 0
 	  , l = ajd2 = ""
-	  , o = window.Event ? t.which : t.keyCode;
+	  , o = Event ? t.which : Event.keyCode;
 	if (13 == o || 8 == o)
-		return !0;
+		return true;
 	if (n = String.fromCharCode(o),
-	-1 == "0123456789".indexOf(n))
-		return !1;
+	-1 == "0123456789".indexOf(n)) 
+		return false;
 	for (u = a.value.length,
 	h = 0; h < u && ("0" == a.value.charAt(h) || a.value.charAt(h) == r); h++)
 		;
@@ -101,10 +101,9 @@ function numberToBr(numero) {
 			a.value += ajd2.charAt(h);
 		a.value += r + l.substring(u - 2, u);
 	}
-	return !1
+	return false
   }
   
-
   
   
 

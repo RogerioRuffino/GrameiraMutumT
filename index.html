@@ -30,14 +30,14 @@
 
         <div class="campo">
           <label>Preco R$/m2 grama</label><br>
-          <input type="text" placeholder=""  value='12,00'id="preco" onKeyPress="return(numtostr(this,'.',',',event))">
-          <!-- <input type="text" placeholder=""  value='12,00'id="preco" onkeyup="numtostr(this.value,0)"> -->
+          <!-- <input type="text" placeholder=""  value='12,00'id="preco" onKeyPress="return(numtostr(this,'.',',',event))"> -->
+          <input type="text" placeholder=""  value='12,00'id="preco" onkeyup="numtostr(this.value,0)">
         </div>
         
         <div class="campo">
             <label>Preco Frete m2 grama</label><br>
-            <input type="text" placeholder="Frete R$/m2" value='2,00' id="precofrete" onKeyPress="return(numtostr(this,'.',',',event))"> 
-            <!-- <input type="text" placeholder="Frete R$/m2" value='2,00' id="precofrete"  onkeyup="numtostr(this.value,1)">  -->
+            <!-- <input type="text" placeholder="Frete R$/m2" value='2,00' id="precofrete" onKeyPress="return(numtostr(this,'.',',',event))">  -->
+            <input type="text" placeholder="Frete R$/m2" value='2,00' id="precofrete"  onkeyup="numtostr(this.value,1)"> 
         </div>
         <br>
         
@@ -46,8 +46,8 @@
 
   <div>
     <label class="labcon">Quero Converter</label><br>
-  <input type="text" placeholder="Digite o Valor" id="input" name="input" onKeyPress="return(numtostr(this,'.',',',event))">
-  <!-- <input type="text" placeholder="Digite o Valor" id="input" name="input"onkeyup="numtostr(this.value,2)">  -->
+  <!-- <input type="text" placeholder="Digite o Valor" id="input" name="input" onKeyPress="return(numtostr(this,'.',',',event))"> -->
+  <input type="text" placeholder="Digite o Valor" id="input" name="input"onkeyup="numtostr(this.value,2)"> 
             <select class="select" id="inputType">
                 <option value="m2">M2</option>
                 <!-- <option value="tapetes">Qtde de Tapetes</option> -->

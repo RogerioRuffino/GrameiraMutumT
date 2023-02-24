@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<body>
+    <div class="cab">
+    <img class="image" width="100px" src="Img/logomutum.jpg" alt="Reference image" />
+    <div class="title">Grameira Mutum<br>
+        <h6>Conversor</h6>
+    </div>
+    
+        <button id="call-program" class="b1">Calcula<br>
+        Área</button>
+    
+    
+
+</div>       
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++  -->
+</head>
+
+<div class="converter"> 
+    <div id="formulario">
+
+        <div class="campo">
+          <label>Preco R$/m2 grama</label><br>
+          <input type="text" placeholder=""  value='12,00'id="preco" onKeyPress="return(numtostr(this,'.',',',event))">
+          <!-- <input type="text" placeholder=""  value='12,00'id="preco" onkeyup="numtostr(this.value,0)"> -->
+        </div>
+        
+        <div class="campo">
+            <label>Preco Frete m2 grama</label><br>
+            <input type="text" placeholder="Frete R$/m2" value='2,00' id="precofrete" onKeyPress="return(numtostr(this,'.',',',event))"> 
+            <!-- <input type="text" placeholder="Frete R$/m2" value='2,00' id="precofrete"  onkeyup="numtostr(this.value,1)">  -->
+        </div>
+        <br>
+        
+    </div>
+    <br>
+
+  <div>
+    <label class="labcon">Quero Converter</label><br>
+  <input type="text" placeholder="Digite o Valor" id="input" name="input" onKeyPress="return(numtostr(this,'.',',',event))">
+  <!-- <input type="text" placeholder="Digite o Valor" id="input" name="input"onkeyup="numtostr(this.value,2)">  -->
+            <select class="select" id="inputType">
+                <option value="m2">M2</option>
+                <!-- <option value="tapetes">Qtde de Tapetes</option> -->
+              
+                    <option value="R$">Valor (R$)</option>
+                <!-- <option value="pal">Paletes</option> -->
+            </select>
+        <br>
+ </div>
+<!-- +++++++++++++++++++++++++++ Saida palets ++++++++++++++++++++++++++++++ -->        
+<input type="text" placeholder="Resultado" id="result">
+            <select id="resultType" class="select">
+                <!-- <option value="m2">Metros Quadrados</option>
+                <option value="tapetes">Qtde de Tapetes</option>
+                <option value="R$">Valor (R$)</option> -->
+                <option value="pal">Paletes</option>
+            </select><br>
+<!-- +++++++++++++++++++++++++++ Saida tapetes ++++++++++++++++++++++++++++++ -->
+<input type="text" placeholder="Qtde de tapetes" id="resultapetes">
+            <select id="resultType" class="select">
+                <!-- <option value="m2">Metros Quadrados</option> -->
+                <option value="tapetes">Tapetes</option>
+                <!-- <option value="R$">Valor (R$)</option> -->
+                <!-- <option value="pal">Paletes</option> -->
+            </select><br>
+<!-- +++++++++++++++++++++++++++ Saida r%++++++++++++++++++++++++++++++ -->
+        <div id="div1" style="display:block;">
+            <input type="text" placeholder="Valor em R$" id="valor">
+            <select id="resultType" class="select">
+                <option value="R$">R$ Grama</option>
+                <!-- <option value="m2">Metros Quadrados</option> -->
+                <!-- <option value="tapetes">Qtde de Tapetes</option> -->
+                <!-- <option value="pal">Paletes</option> -->
+            </select><br>
+        </div>
+<!-- +++++++++++++++++++++++++++ Saida m2++++++++++++++++++++++++++++++ -->        
+<div id="div2" style="display:none;">
+            <input type="text" placeholder="m2" id="m2">
+            <select id="resultType" class="select">
+                <!-- <option value="R$">Valor (R$)</option> -->
+                <option value="m2">Metros Quadrados</option>
+                <!-- <option value="tapetes">Qtde de Tapetes</option> -->
+                <!-- <option value="pal">Paletes</option> -->
+            </select>
+        </div>
+<!-- +++++++++++++++++++++++++++ Saida m2++++++++++++++++++++++++++++++ -->        
+
+    <input type="text" placeholder="Valor do frete total" id="r$frete">
+    <select id="resultType" class="select">
+        <!-- <option value="R$">Valor (R$)</option> -->
+        <!-- <option value="m2">Metros Quadrados</option> -->
+        <!-- <option value="tapetes">Qtde de Tapetes</option> -->
+        <!-- <option value="pal">Paletes</option> -->
+        <option value="fre">R$ Frete</option>
+    </select>
+ 
+
+
+    </div>
+     
+<script src="script.js"></script>
+</body>
+</html>
